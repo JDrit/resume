@@ -1,0 +1,119 @@
+\documentclass[a4paper,margin,line,11pt]{resume}
+\usepackage[defblank]{paralist}
+\usepackage{pdfpages}
+\usepackage{anysize}
+\usepackage[unicode]{hyperref}
+\hypersetup{
+	pdftitle={Joseph Batchik's Resume},
+	pdfauthor={Joseph Batchik},
+	pdfborder={0 0 0},
+	unicode=true
+}
+\marginsize{0.375in}{1.875in}{0.375in}{0.375in}
+\setdefaultitem{\footnotesize \textbullet}{}{}{}{}{}
+\setdefaultleftmargin{0em}{}{}{}{}{}
+\setdefaultenum{(a)}{(1)}{}{}{}{}
+\newcommand{\rurl}[1]{\hfill {\footnotesize \url{#1}}}
+\newcommand{\rdate}[1]{\hfill {\small #1}}
+\renewcommand{\employer}[5]{\item[#1] - #2 \rdate{#3} \\* #4 \rurl{#5} \\*}
+\begin{document}
+\name{\Large Joseph D. Batchik}
+\begin{resume}
+\section{\mysidestyle Contact \\ Information} \vspace{2mm}
+	\begin{asparablank}
+		\item 6445 Sundown Trail \hfill (410) 599-3550
+		\item Columbia MD 21044 \hfill josephbatchik@gmail.com
+	\end{asparablank}
+
+\section{\mysidestyle Objective}
+	 I am looking for a job at Rochester Institute of Technology to expand my skills in the Computer Service field.
+
+\section{\mysidestyle Education}
+	\begin{compactdesc}
+		\item[Rochester Institute of Technology] - Rochester, NY \rdate{2012 - Present}
+		\begin{compactitem} { \small
+			\item Computer Science Major
+			\item Dean's List
+			\item GPA 3.53
+		} \end{compactitem}
+		\item[Atholton High School] - Columbia, MD \rdate{2008 - 2012}
+		\begin{compactitem} { \small
+			\item Graduate with Honors
+			\item Earned the Computer Science Academy Certificate
+		} \end{compactitem}
+	\end{compactdesc}
+
+\section{\mysidestyle Experience}
+	\begin{asparadesc}
+		\employer{Six3 Systems, Inc.}{Fulton, MD}{Summer 2012}{Summer Intern}{http://six3esd.com}
+
+		\small
+		I worked in a group developing an online course for employees to learn about various big data solutions such as Hadoop, HBase, MongoDB. During this, I also helped set up and maintained a Hadoop / MapReduce cluster. 
+		\normalsize
+		\\
+		\employer{SRA, International}{Columbia, MD}{Summer 2012}{Summer Intern}{http://sra.com}
+
+		\small
+		Worked on developing software to monitor server rooms that would notify the correct personal when there was any issue with the servers. Also helped with data backup and protection.
+		\normalsize
+		\\
+		\employer{RTGX - Ross Technology, Inc}{Baltimore, MD}{Summer 2011}{System Administration Intern}{http://rtgx.com}
+
+		\small
+		Worked with fellow system administrators to run the main offices. Worked with various wireless routers and computer hardware to provide support to other employees.
+		\normalsize
+		\\
+		\employer{Computer Science Corporation}{Hanover, MD}{Summer 2011}{Summer Intern}{http://csc.com}
+		
+		\small
+		Worked on a thin client lab setup to use in demonstration to various government agencies. Helped also with other engineers to help maintain a server room and keep it functioning in a good environment.
+		\normalsize
+	\end{asparadesc}
+
+\section{\mysidestyle Technical Skills \& Certifications}
+	\begin{compactdesc}
+		\item[Fluent Languages] \begin{inparaenum} { \small
+			\item Java
+			\item Python
+			\item HTML
+			\item CSS
+		} \end{inparaenum}
+		\item[Operating Systems] \begin{inparaenum} { \small
+			\item Various Linux distributions
+			\item Windows XP / 7 / 8
+		} \end{inparaenum}
+		\item[Computer Concepts] \begin{inparaenum} { \small
+			\item Hadoop
+			\item Linux Terminal
+			\item SQL
+			\item Data Structures
+		} \end{inparaenum}
+		\item[Certifications] \begin{inparaenum} { \small
+			\item Cloudera Certified Developer for Apache Hadoop, 2012
+		} \end{inparaenum}
+	\end{compactdesc}
+
+\section{\mysidestyle Clubs \& Activities}
+	\begin{asparablank}
+		\item CSH ({\small Computer Science House}) \rurl{http://www.csh.rit.edu/}
+		\item US FIRST Robotics Team 2537 - {\small Lead website developer}\rurl{http://first.raidtech.net/}
+		\item Boy Scout Troop 540
+		\item High School Varsity Cross Country
+	\end{asparablank}
+
+\section{\mysidestyle Honors \& Awards}
+	\begin{asparablank}
+		\item First Place, Maryland State Math Engineering Science Achievement - Cyber Competition, 2012
+		\item Website Excellence Award, FIRST Robotics 2012
+		\item "Most Aspiring Security Professional", Unviersity of Maryland CyberWatch
+	\end{asparablank}
+
+%\section{\mysidestyle Special Accomplishments}
+%	\begin{asparablank}
+%		\item Joined CSH ({\small Computer Science House}). While there, I was elected by my peers first as a network administrator, then as the director of all the network administrators.\rurl{http://www.csh.rit.edu/}
+%		\item At age 8, built my first computer. At age 10, worked my first job at City Island Computer Services. At age 12, attended my first programming class at Lehman College.
+%		\item Designed and implemented an encryption algorithm using a combination of transposition and substitution.
+%	\end{asparablank}
+
+\end{resume}
+\end{document}
