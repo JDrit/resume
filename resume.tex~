@@ -37,17 +37,17 @@
 
 \section{\mysidestyle Experience}
 	\begin{asparadesc}
-		\employer{John Hopkins University Applied Physics Laboratory}{Laurel, MD}{Summer 2013}{Summer Intern}{http://jhuapl.edu/}
-		Implemented a sensor management system used to control and collect data from multiple telescopes remotely. Languages / tools used: Java, ant, svn, SQL, Google Protocol Buffers.
-		\normalsize
-		\\
+        \employer{John Hopkins University Applied Physics Laboratory}{Laurel, MD}{Summer 2013}{Summer Intern}{http://jhuapl.edu/}
+        Implemented a sensor management system used to control and collect data from multiple telescopes remotely. Languages / tools used: Java, ant, svn, SQL, Google Protocol Buffers.
+        \normalsize
+        \\
 		\employer{Six3 Systems, Inc.}{Fulton, MD}{Summer 2012}{Summer Intern}{http://six3esd.com/}
 		Worked in a group developing a course for employees to learn about about big data solutions such as Hadoop, HBase, etc. Languages / tools used: Java, Hadoop, Eclipse, HBase, Accumulo.  
 		\normalsize
 		\\
 		\employer{SRA, International}{Columbia, MD}{Summer 2012}{Summer Intern}{http://sra.com/}
 		Worked on developing software to monitor server rooms that would monitor servers' downtime and issues. Also assisted with data backup and protection. Languages / tooles used: Python web servers, svn.
-		\normalsize
+s		\normalsize
 		\\
 		\employer{RTGX - Ross Technology, Inc}{Baltimore, MD}{Summer 2011}{System Administration Intern}{http://rtgx.com/}
 		Worked with fellow system administrators to run the main offices. Worked with various wireless routers and computer hardware to provide support to other employees. 
