@@ -1,116 +1,260 @@
-\documentclass[a4paper,margin,line,11pt]{resume}
-\usepackage[defblank]{paralist}
-\usepackage{pdfpages}
-\usepackage{anysize}
-\usepackage[unicode]{hyperref}
-\hypersetup{
-	pdftitle={Joseph Batchik's Resume},
-	pdfauthor={Joseph Batchik},
-	pdfborder={0 0 0},
-	unicode=true
-}
-\marginsize{0.375in}{1.875in}{0.600in}{0.375in}
-\setdefaultitem{\footnotesize \textbullet}{}{}{}{}{}
-\setdefaultleftmargin{0em}{}{}{}{}{}
-\setdefaultenum{(a)}{(1)}{}{}{}{}
-\newcommand{\rurl}[1]{\hfill {\footnotesize \url{#1}}}
-\newcommand{\rdate}[1]{\hfill {\small #1}}
-\renewcommand{\employer}[5]{\item[#1] - #2 \rdate{#3} \\* #4 \rurl{#5} \\*}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Two Column One Page Curriculum Vitae
+% LaTeX Template
+% Version 1.1 (24/1/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Alessandro (The CV Inn)
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt]{article} % Font size - 10pt, 11pt or 12pt
+
+\usepackage[hmargin=1.25cm, vmargin=1.5cm]{geometry} % Document margins
+
+\usepackage{marvosym} % Required for symbols in the colored box
+\usepackage{ifsym} % Required for symbols in the colored box
+
+\usepackage[usenames,dvipsnames]{xcolor} % Allows the definition of hex colors
+
+% Fonts and tweaks for XeLaTeX
+\usepackage{fontspec,xltxtra,xunicode}
+\defaultfontfeatures{Mapping=tex-text}
+%\setromanfont[Mapping=tex-text]{Hoefler Text} % Main document font
+%\setsansfont[Scale=MatchLowercase,Mapping=tex-text]{Gill Sans} % Font for your name at the top
+%\setmonofont[Scale=MatchLowercase]{Andale Mono}
+
+% Colors for links, text and headings
+\usepackage{hyperref}
+\definecolor{linkcolor}{HTML}{506266} % Blue-gray color for links
+\definecolor{shade}{HTML}{F5DD9D} % Peach color for the contact information box
+\definecolor{text1}{HTML}{2b2b2b} % Main document font color, off-black
+\definecolor{headings}{HTML}{701112} % Dark red color for headings
+% Other color palettes: shade=B9D7D9 and linkcolor=A40000; shade=D4D7FE and linkcolor=FF0080
+
+\hypersetup{colorlinks,breaklinks, urlcolor=linkcolor, linkcolor=linkcolor} % Set up links and colors
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+% Headers and footers can be added with the \lhead{} \rhead{} \lfoot{} \rfoot{} commands
+% Example footer:
+%\rfoot{\color{headings} {\sffamily Last update: \today}. Typeset with Xe\LaTeX}
+
+\renewcommand{\headrulewidth}{0pt} % Get rid of the default rule in the header
+
+\usepackage{titlesec} % Allows creating custom \section's
+
+% Format of the section titles
+\titleformat{\section}{\color{headings}
+\scshape\Large\raggedright}{}{0em}{}[\color{black}\titlerule]
+
+\titlespacing{\section}{0pt}{0pt}{5pt} % Spacing around titles
+
 \begin{document}
-\name{\Large Joseph D. Batchik}
-\begin{resume}
-\section{\mysidestyle Contact \\ Information}
-	\begin{asparablank}
-		\item 6445 Sundown Trail \hfill (410) 599-3550
-		\item Columbia MD, 21044 \hfill josephbatchik@gmail.com
-		\item \rurl{http://jd.batchik.net/}
-	\end{asparablank}
 
-\section{\mysidestyle Objective}
-    I am seeking a summer co-op.
+\color{text1} % Sets the default text color for the whole document to the color defined as 'text1'
 
-\section{\mysidestyle Education}
-	\begin{compactdesc}
-		\item[Rochester Institute of Technology] - Rochester, NY \rdate{2012 - 2016}
-		\begin{compactitem} { \small
-            \item Computer Science Major \hfill Dean's List (3.65 GPA)
-		} \end{compactitem}
-	\end{compactdesc}
+%----------------------------------------------------------------------------------------
+%	TITLE
+%----------------------------------------------------------------------------------------
 
-\section{\mysidestyle Technical Skills \& Certifications}
-	\begin{compactdesc}
-		\item[Fluent Languages] \begin{inparaenum} { \small
-			\item Java
-			\item Python
-		} \end{inparaenum}
-		\item[Operating Systems] \begin{inparaenum} { \small
-			\item Various Linux distributions
-			\item Windows XP / 7 / 8
-		} \end{inparaenum}
-		\item[Computer Concepts] \begin{inparaenum} { \small
-			\item Hadoop
-			\item Android Development
-			\item SQL
-			\item Regular Expressions
-		} \end{inparaenum}
-		\item[Certifications] \begin{inparaenum} { \small
-		    \item Cloudera Certified Developer for Apache Hadoop, 2012
-		} \end{inparaenum}
-        \item[Tools] \begin{inparaenum} { \small
-            \item git
-            \item svn
-            \item ant
-            \item vim
-            \item eclipse
-            \item Google Protocol Buffers
-        } \end{inparaenum}
-	\end{compactdesc}
+\par{\centering{\sffamily\Huge Joseph D. Batchik}\\ % Your name
+%{\color{headings}\fontspec[Variant = 2]{Zapfino} Curriculum {Vit\fontspec[Variant = 3]{Zapfino}\ae}\\[15pt]\par} % Curriculum vitae text in the Zapfino font
+	
+%----------------------------------------------------------------------------------------
 
-\section{\mysidestyle Experience}
-	\begin{asparadesc}
-		\employer{John Hopkins University Applied Physics Laboratory}{Laurel, MD}{Summer 2013}{Summer Intern}{http://jhuapl.edu/}
-		Implemented a sensor management system used to control and collect data from multiple telescopes remotely. Languages / tools used: Java, ant, svn, SQL, Google Protocol Buffers.
-		\normalsize
-		\\
-		\employer{Six3 Systems, Inc.}{Fulton, MD}{Summer 2012}{Summer Intern}{http://six3esd.com/}
-		Worked in a group developing a course for employees to learn about about big data solutions such as Hadoop, HBase, etc. Languages / tools used: Java, Hadoop, Eclipse, HBase, Accumulo.  
-		\normalsize
-		\\
-		\employer{SRA, International}{Columbia, MD}{Summer 2012}{Summer Intern}{http://sra.com/}
-		Worked on developing software to monitor server rooms that would monitor servers' downtime and issues. Also assisted with data backup and protection. Languages / tooles used: Python web servers, svn.
-		\normalsize
-		\\
-		\employer{RTGX - Ross Technology, Inc}{Baltimore, MD}{Summer 2011}{System Administration Intern}{http://rtgx.com/}
-		Worked with fellow system administrators to run the main offices. Worked with various wireless routers and computer hardware to provide support to other employees. 
-		\normalsize
-		\\
-		\employer{Computer Science Corporation}{Hanover, MD}{Summer 2011}{Summer Intern}{http://csc.com/}
-		Worked on a thin client lab setup used in demonstration to various government agencies. Worked with other engineers to maintain a server room and keep it functioning. Languages / tools used: VMware, thin clients.
-		\normalsize
-	\end{asparadesc}
+\begin{minipage}[t]{0.5\textwidth} % Start the left-hand side of the page
+\vspace{0pt} % Trick for alignment
+	
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
 
+\section{Work Experience} 
 
-\section{\mysidestyle Projects}
-    \begin{asparablank}
-        \item {\bf Android WebNews:} Wrote an Android application to allow Android users to read and edit the Computer Science House's internal news network on a native application.
-        \normalsize
-        \\
-        \item {\bf Wiki Racing:} Wrote a python webserver that would find the shortest path between any two articles on Wikipedia by only clicking on links on the page
-        \normalsize
-    \end{asparablank}
-\section{\mysidestyle Clubs \& Activities}
-	\begin{asparablank}
-		\item CSH ({\small Computer Science House}) \rurl{http://www.csh.rit.edu/}
-		\item US FIRST Robotics Team 2537 - {\small Lead website developer}\rurl{http://first.raidtech.net/}
-	\end{asparablank}
+%------------------------------------------------
+% WORK EXPERIENCE 1
+%------------------------------------------------
 
-\section{\mysidestyle Honors \& Awards}
-	\begin{asparablank}
-		\item 1st Place, Maryland Math Engineering Science Achievement - Cyber Competition, 2012
-		\\ - Developed maze transversal software, which won 1st place at a regional \& state competiton
-		\item Website Excellence Award, FIRST Robotics 2012
-		\\ - Built and maintained an award winning website 
-	\end{asparablank}
+{\raggedleft\textsc{Summer 2013 - Laurel, MD}\par}
 
-\end{resume}
-\end{document}
+{\raggedright\large John Hopkins University Applied Physis Lab \\
+\textit{Summer Intern}  \hfill {\small \href{http://jhuapl.edu}{http://jhuapl.edu}}\\ [5pt]}
+
+\normalsize{Implemented a sensor management system used to control and collect data from multiple telescopes remotely. Languages / tools used: Java, ant, svn, SQL, Google Protocol Buffers.}\\
+
+%------------------------------------------------
+% WORK EXPERIENCE 2
+%------------------------------------------------
+
+{\raggedleft\textsc{Summer 2012 - Fulton, MD}\par}
+
+{\raggedright\large Six3 Systems, Inc. \\
+\textit{Summer Intern} \hfill {\small \href{http://six3esd.com}{http://six3esd.com}} \\[5pt]}
+
+\normalsize{Worked in a group developing a course for employees to learn about about big data solutions such as Hadoop, HBase, etc. Languages / tools used: Java, Hadoop, Eclipse, HBase,
+Accumulo.}
+
+%------------------------------------------------
+% WORK EXPERIENCE 3
+%------------------------------------------------
+
+{\raggedleft\textsc{Summer 2012 - Columbia, MD}\par}
+
+{\raggedright\large SRA, International \\
+\textit{Summer Intern} \hfill {\small \href{http://sra.com}{http://sra.com}} \\[5pt]}
+
+\normalsize{Worked on developing software to monitor server rooms' downtime and issues. Also assisted with data backups and data protection. Languages / tools used: Python web servers, svn.}\\
+
+%------------------------------------------------
+% WORK EXPERIENCE 4
+%------------------------------------------------
+
+{\raggedleft\textsc{Summer 2011 - Baltimore, MD}\par}
+
+{\raggedright\large RTGX - Ross Technology, Inc. \\
+\textit{Summer Intern} \hfill {\small \href{http://rtgx.com}{http://rtgx.com}} \\[5pt]}
+
+\normalsize{Worked with fellow system administrators to run the main offices. Worked with various wireless routers and computer hardware to provide support to other employees.} \\
+
+%------------------------------------------------
+% WORK EXPERIENCE 5
+%------------------------------------------------
+
+{\raggedleft\textsc{Summer 2011 - Hanover, MD}\par}
+
+{\raggedright\large Computer Science Corporation \\
+    \textit{Summer Intern } \hfill {\small \href{http://cscc.om}{http://csc.com}} \\[5pt]} 
+
+\normalsize{ Worked on a thin client lab setup used in demonstration to various government agencies. Worked with other engineers to maintain a server room and keep it functioning. Languages / tools used: VMWare, thin clients} \\
+
+%----------------------------------------------------------------------------------------
+%	CLUBS & ACTIVITIES
+%----------------------------------------------------------------------------------------
+
+\section{Clubs \& Activities}
+CSH (Computer Science House) \hfill \href{http://csh.rit.edu/}{http://csh.rit.edu} \\
+\begin{sloppypar}
+An organization at RIT that provides a living and learning enviroment with access to unique facalities, hands-on learning, all in a social enviroment.\\
+\end{sloppypar}
+US FIRST Robotics Team 2537 \hfill \href{http://first.raidtech.net}{http://first.raidtech.net} \\
+\begin{sloppypar}
+Was part of a robotics team in which I built and maintained the team's award winning website. \\
+\end{sloppypar}
+\end{minipage} % End the left-hand side of the page
+\hfill
+\begin{minipage}[t]{0.44\textwidth} % Start the right-hand side of the page
+\vspace{0pt} % Trick for alignment
+
+%----------------------------------------------------------------------------------------
+%	COLORED BOX
+%----------------------------------------------------------------------------------------
+
+\colorbox{shade}{\textcolor{text1}{
+\begin{tabular}{c|p{7cm}}
+\raisebox{-4pt}{\textifsymbol{18}} & 6445 Sundown Trail, Columbia MD, 21044  \\ % Address
+    \raisebox{-3pt}{\Mobilefone} & (410) 599-3550 \\ % Phone number
+\raisebox{-1pt}{\Letter} & \href{mailto:josephbatchik@gmail.com}{josephbatchik@gmail.com} \\ % Email address
+\Keyboard & \href{http://jd.batchik.net}{http://jd.batchik.net} \\ % Website
+\end{tabular}
+}
+}\\[10pt]
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education} 
+
+\begin{tabular}{rl} % Start a table with two columns, one for dates and one for qualifications
+
+%------------------------------------------------
+% EDUCATION 1
+%------------------------------------------------
+
+2012 -- 2016 & \textbf{Rochester Institute of Technology} \\ 
+& \textsc{Computer Science Major} \\ 
+& \textit{Dean's List (3.65 GPA)}\\
+& Rochester, New York \\
+\end{tabular}\\[10pt]
+
+%----------------------------------------------------------------------------------------
+%	Skills
+%----------------------------------------------------------------------------------------
+
+\section{Skills \& Certifications} 
+
+\begin{tabular}{rl}
+Languages
+& java, python, HTML \\ 
+& \\
+Operating Systems
+& Various Linux distributions, \\
+& Windows XP / 7 / 8 \\
+& \\
+Computer Concepts
+& Hadoop, SQL, \\
+& Android development, \\
+& Regular Expressions \\
+& \\
+Certifiations
+& Cloudera Certified Developer \\
+& for Apache Hadoop, 2012 \\
+& \\
+Tools
+& git, svn, ant, vim, eclipse, \\
+& Google Protocol Buffers \\
+& \\
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	Projects
+%----------------------------------------------------------------------------------------
+
+\section{Projects}
+    \begin{sloppypar}
+        {\bf CSH News:} Wrote an Android application to allow users to read and edit the Computer Science House's internal news network on a native application. \\
+    \end{sloppypar} 
+    \begin{sloppypar}
+        {\bf CSH Hosing Site:} Wrote a python webserver to allow for room registration for future room assignments for members of the Computer Science House.\\
+    \end{sloppypar}
+    \begin{sloppypar}
+        {\bf Wiki Racing:} Wrote a python webserver that would find the shortest path between any two articles on Wikipedia by only clicking on links on the page.
+    \end{sloppypar}
+
+%----------------------------------------------------------------------------------------
+%	AWARDS
+%----------------------------------------------------------------------------------------
+
+\section{Awards} 
+
+\begin{sloppypar}
+    {\bf 2012 - Maryland Math Engineering Science Achievement \\}Won 1st place in both regional and state level competitions for developing a maze transversal algorithm in python.
+\end{sloppypar}
+
+%------------------------------------------------
+
+\begin{sloppypar}
+    {\bf 2012 - Website Excellence Award, FIRST Robotics \\}Developed and maintained an award winning website.
+\end{sloppypar}
+
+%----------------------------------------------------------------------------------------
+	
+\end{minipage} % End right-hand side of the page
+
+\end{document}  
