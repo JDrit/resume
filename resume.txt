@@ -1,0 +1,66 @@
+Joseph D. Batchik
+(410) 599-3550
+josephbatchik@gmail.com
+
+Objective: To secure a co-op position for the summer of 2015.
+
+Work Experience
+ Google - Summer 2014 - New York, NY
+ Engineering Practicum Intern - http://google.com
+   Worked on load testing infrastructure and implemented performance increases as a site reliability engineer. 
+   Languages / tools used: Java, Python, various Google data stores.
+ Amazon - Spring 2014 - Seattle, WA
+ Software Developer Engineer Intern - http://amazon.com
+   Worked with various Amazon cloud products such as CloudSearch, SNS, and SQS to develop an internal search 
+   tool for the Enterprise Data Warehouse team. Languages / tools used: Java, various AWS products
+ John Hopkins University Applied Physics Lab - Summer 2013 - Laurel, MD
+ Summer Intern - http://jhuapl.edu
+   Implemented a sensor management system used to control and collect data from multiple telescopes remotely. 
+   Languages / tools used: Java, ant, svn, SQL, Google Protocol Buﬀers.
+ Six3 Systems, Inc. - Summer 2012 - Fulton, MD
+ Summer Intern - http://six3esd.com
+   Worked on a team developing a course to teach employees about big data solutions such as Hadoop, HBase, etc. 
+   Languages / tools used: Java, Hadoop, Eclipse, HBase
+ SRA, International - Summer 2012 - Columbia, MD
+ Summer Intern - http://sra.com
+ Worked on developing software to monitor server rooms’ downtime and dealt with data backups.
+ RTGX - Ross Technology, Inc. -  Summer 2011 - Baltimore, MD
+ Summer Intern - http://rtgx.com
+ Worked with fellow system administrators to run the main oﬃces.
+ Computer Science Corporation -  Summer 2011 - Hanover, MD
+ Summer Intern - http://csc.com
+   Worked on a thin client lab setup used in demonstrations to various government agencies.
+ 
+Education
+  2012 – 2016 Rochester Institute of Technology
+  Computer Science Major
+   Dean’s List (3.60 GPA)
+   Rochester, New York
+ 
+Skills & Certifications
+ Languages: Python, Java, HTML/CSS, Ruby, Go
+ Certiﬁcations: Cloudera Certiﬁed Developer for Apache Hadoop, 2012
+ Tools: git, svn, vim, rails, postgreSQL, Google Protocol Buﬀers, perforce
+ 
+Self-Directed Projects
+ Mobile News: Wrote an Android application to allow users to read and edit the Computer Science House’s
+   internal news network on a native application.
+ Housing Site: Designed a Python web server to allow for room registration for future room assignments for
+   members of the Computer Science House.
+ LDAP Proﬁles: Created a Ruby on Rails web server that is a web interface to LDAP servers. It uses SASL
+   authentication with WebAuth to provide security.
+
+Awards
+ 2012 - Maryland Math Engineering Science Achievement
+   Won 1st place in both regional and state level competitions for developing a maze traversal algorithm in python.
+ 2012 - Website Excellence Award, FIRST Robotics
+   Developed and maintained an award winning website for my school’s FIRST robotics team.
+
+Clubs & Activities
+ CSH (Computer Science House) http://csh.rit.edu
+   An organization at RIT that provides a living and learning environment with access to unique facilities,
+   hands-on learning, all in a social environment.
+ Robotics Team 2537 http://ﬁrst.raidtech.net
+   Was part of a robotics team in which I built and
+   maintained the team’s award winning website.
+
