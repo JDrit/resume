@@ -15,15 +15,16 @@
 \setdefaultenum{(a)}{(1)}{}{}{}{}
 \newcommand{\rurl}[1]{\hfill {\footnotesize \url{#1}}}
 \newcommand{\rdate}[1]{\hfill {\small #1}}
-\renewcommand{\employer}[5]{\item[#1] - #2 \rdate{#3} \\* #4 \rurl{#5} \\*}
+\renewcommand{\employer}[5]{ \item[#1] - #2 \rdate{#3} \\* #4 \rurl{#5} \\*}
+%\renewcommand{\employer}[5]{\item[#1] - #2 \rdate{#3} \\* #4 \rurl{#5} \\*}
 \begin{document}
 \name{\Large Joseph D. Batchik}
 \begin{resume}
 \section{\mysidestyle Contact \\ Information} \vspace{2mm}
 	\begin{asparablank}
-    \item 6445 Sundown Trail  \hfill (410) 599-3550
-		\item Columbia MD, 21044 \hfill \href{http://jd.batchik.net/}{http://jd.batchik.net}
-		\item  \hfill \href{mailto:josephbatchik@gmail.com}{josephbatchik@gmail.com}
+    \item \hfill
+		\item \hfill \href{http://jd.batchik.net/}{http://jd.batchik.net}
+		\item  \hfill 
 	\end{asparablank}
 
 \section{\mysidestyle Objective}
@@ -34,24 +35,24 @@
         \employer{Google}{New York, NY}{Summer 2014}{SRE Engineering Practicum Intern}
         {http://google.com/}
 		\small
-        Worked on load testing infrastructure and implemented performance increases 
-        in multiple systems as a site reliability engineer. Languages / tools used: 
-        Java, Python, various Google data stores.
+        Implemented load testing infrastructure for newly released software.
+        Reduced request latency by 70\% for backend monitoring services.
+        Languages / tools used: Java, Python, Protocol Buffers, Google data stores.
 		\normalsize
 		\\
 		\employer{Amazon}{Seattle, WA}{Spring 2014}{Software Developer Engineer Intern}
         {http://amazon.com/}
 		\small
-	    Worked with various Amazon cloud products such as Cloud-Search, SNS, and SQS 
-        to develop an internal search tool for the Enterprise Data Warehouse team. 
-        Languages / tools used: Java, various AWS products
+	    Overhauled internal search capabilities for the Enterprise Data Warehouse
+        team, using various Amazon cloud products, including Cloud-Search, SNS,
+        and SQS.
         \normalsize
 		\\
 		\employer{John Hopkins University Applied Physics Lab}{Laurel, MD}
         {Summer 2013}{Engineering Intern}{http://jhuapl.edu/}
 		\small
-		Implemented a sensor management system used to control and collect data from 
-        multiple telescopes remotely. Languages / tools used: Java, ant, svn, SQL, 
+		Developed a sensor management system used to control and collect data from
+        multiple telescopes remotely. Languages / tools used: Java, ant, svn, SQL,
         Google Protocol Buffers.
         \normalsize
         \\
@@ -68,7 +69,7 @@
 		\item[Rochester Institute of Technology] - Rochester, NY \rdate{September 2012 - Present}
 		\begin{compactitem} { \small
 			\item Major: Computer Science, Minor: American Politics
-            \item Dean's List (3.6 GPA)
+            \item Dean's List: In-Major: 3.82 GPA, Over All: 3.6 GPA
 			\item Expected graduation: May 2016
 		} \end{compactitem}
 	\end{compactdesc}
@@ -78,16 +79,18 @@
 		\item[Languages] \begin{inparaenum} { \small
 			\item Python
 			\item Java
+            \item Haskell
 			\item HTML / CSS
 			\item Ruby
 			\item Go
+            \item C
 		} \end{inparaenum}
 		\item[Tools] \begin{inparaenum} { \small
 			\item git
-            \item svn
             \item vim
             \item rails
             \item postgreSQL
+            \item JUnit
             \item Google Protocol Buffers
 		} \end{inparaenum}
         \item[Certifications] \begin{inparaenum} { \small
@@ -97,16 +100,16 @@
 
 \section{\mysidestyle Self-Directed Projects}
     \begin{asparablank}
-        \item \textbf{Sys Mon}: Developed a system monitoring tool in Ruby to monitor 
-            load average, memory usage, and IO. All the log 
+        \item \textbf{Sys Mon}: Developed a system monitoring tool in Ruby to monitor
+            load average, memory usage, and IO. All the log
             data is viewable through a web interface with graphs over time. \\
-        \item \textbf{Github Stats}: Create a data anaylzer in Go to determine the language
-            usage of repositories on GitHub. This showed the connections between
-            various languages and usage over time. This data anaylzer was set up in a
-            distributed manner using RabbitMQ. \\
-        \item \textbf{LDAP Profiles}: Created a Ruby on Rails web server that is a web 
-            interface to LDAP servers. It uses SASL authentication with WebAuth 
-            to provide security. \\
+        \item \textbf{Github Stats}: Built a data anaylzer in Go to determine the language
+            usage of repositories on GitHub. This showes the connections between
+            various languages and usage over time. The data anaylzer was set up in a
+            distributed manner using RabbitMQ to increase network performance. \\
+        \item \textbf{LDAP Profiles}: Created a Rails web application to act as a
+            friendly interface to LDAP servers. It integrates with WebAuth to
+            securely bind to LDAP and to safely deal with user information. \\
         \item \textbf{Mobile News}: Wrote an Android application to allow users to read 
             and edit the Computer Science House’s internal news network on a 
             native application. \\
@@ -124,7 +127,7 @@
     \end{asparablank}
 \section{\mysidestyle Clubs \& Activities}
     \begin{asparablank}
-        \item \textbf{CSH (Computer Science House)}: An organization at RIT that 
+        \item \textbf{CSH (Computer Science House)}: An organization at RIT that
             provides a living and learning environment with access to unique facilities
             and hands-on learning, all in a social environment.
     \end{asparablank}
