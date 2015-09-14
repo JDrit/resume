@@ -1,111 +1,79 @@
-Contact\
-Information
+Contact Information
 ===========
 
-[http://jd.batchik.net](http://jd.batchik.net/)
-
-Objective
-=========
-
-To secure a 2015 summer internship in the field of computer science.
+josephbatchik@gmail.com
+(410) 599-3550
 
 Experience
 ==========
 
-<span>http://google.com/</span> Implemented load testing infrastructure
-for newly released software. Reduced request latency by 70% for backend
-monitoring services. Languages / tools used: Java, Python, Protocol
-Buffers, Google data stores.\
- <span>http://amazon.com/</span> Overhauled internal search capabilities
-for the Enterprise Data Warehouse team, using various Amazon cloud
-products, including Cloud-Search, SNS, and SQS.\
- <span>Summer 2013</span><span>Engineering
-Intern</span><span>http://jhuapl.edu/</span> Developed a sensor
-management system used to control and collect data from multiple
-telescopes remotely. Languages / tools used: Java, ant, svn, SQL, Google
-Protocol Buffers.\
-\
-Additional prior summer internships:\
-**Six3 Systems, Inc.** - Fulton, MD Summer 2012 - http://six3esd.com\
-**SRA International** - Columbia, MD Summer 2012 - http://sra.com\
-**RTGX - Ross Technology, Inc.** - Baltimore, MD Summer 2011 -
-http://rtgx.com\
-**Computer Science Corporation** - Hanover, MD Summer 2011 -
-http://csc.com
+Cloudera - Summer 2015 (Software Engineer Intern)
+Worked on a several parts of Apache Spark, including implementing performance
+increases which reduce network traffic by over 90% and integrating Apache 
+Avro as a first class citizen into Spark core. Languages / tools used: Scala,
+Java, Avro.
+
+Google - Summer 2014 (SRE Engineering Practicum Intern)
+Implemented load testing infrastructure for newly released software. Reduced
+request latency by 70% for back-end monitoring services. Languages / tools 
+used: Java, Python, Protocol Buffers, Google data stores.
+
+Amazon - Spring 2014 (Software Developer Engineer Intern)
+Overhauled internal search capabilities for the Enterprise Data Warehouse team,
+using various Amazon cloud products, including Cloud-Search, SNS, and SQS.
+
+John Hopkins University Applied Physics Lab - Summer 2013 (Engineering Intern)
+Working with a team, developed a sensor management system used to control and
+collect data from multiple telescopes remotely. Languages / tools used: Java,
+ant, svn, SQL, Google Protocol Buffers.
+
+Additional prior summer internships:
+Six3 Systems, Inc. - MD Summer 2012
+SRA International - Summer 2012
+RTGX - Ross Technology, Inc. - Summer 2011
+Computer Science Corporation - Summer 2011
 
 Education
 =========
 
-- Rochester, NY
-
+Rochester, NY
 Major: Computer Science, Minor: American Politics
-
 Dean’s List: In-Major: 3.82 GPA, Over All: 3.6 GPA
-
 Expected graduation: May 2016
 
 Technical Skills & Certifications
 =================================
 
-Python
-
-Java
-
-Haskell
-
-HTML / CSS
-
-Ruby
-
-Go
-
-C
-
-git
-
-vim
-
-rails
-
-postgreSQL
-
-JUnit
-
-Google Protocol Buffers
+Scala, Python, Java, Ruby, Go, Haskell, Git, Apache Spark
+Apache Avro, Rails, PostgreSQL, JUnit, Protocol Buffers
 
 Cloudera Certified Developer for Apache Hadoop, 2012
 
 Self-Directed Projects
 ======================
 
+**Wikipedia Page Views**: Using HDFS and HBase, built a system that
+processed and stored the page view log data for all of Wikipedia and
+presented the information in a real-time web UI. Created and maintained
+myself an 8 node Hadoop cluster for the project.
+
+**Github Language Analysis**: Built a data analyzer and ingest pipeline
+using Go to determine the programming language usage across all of
+GitHub. This provided key insights to language usage trends over time
+and in comparison to each other. Implemented a distributed ingest
+pipeline to increase processing capabilities.
+
 **LDAP Profiles**: Created and maintain a Rails web application to act
 as a friendly interface to LDAP servers. It integrates with WebAuth to
 securely provide keyless login. Actively used in production at Rochester
-Institute of Technology\
-
-**Github Language Analysis**: Built a data anaylzer and ingest pipeline
-using Go to determine the programming language usage across all of
-GitHub. Was able to provide key insights to usage trends over time and
-in comparison to each other. Implemented a distributed ingest pipeline
-to increase processing capabilities.\
-
-**Sys Mon**: Developed a system monitoring tool in Ruby to monitor load
-average, memory usage, and IO. All the log data is viewable through a
-web interface with graphs over time.\
-
-**Mobile News**: Wrote an Android application to allow users to read and
-edit the Computer Science House’s internal news network on a native
-application.\
+Institute of Technology.
 
 Awards
 ======
 
 **Maryland Math Engineering Science Achievement**: Won 1st place in both
 regional and state level competitions for developing a maze traversal
-algorithm in Python.\
-
-**Website Excellence Award, FIRST Robotics**: Developed and maintained
-an award-winning website for my school’s FIRST robotics team.
+algorithm in Python.
 
 Clubs & Activities
 ==================
