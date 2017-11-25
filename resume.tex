@@ -2,6 +2,7 @@
 \usepackage[defblank]{paralist}
 \usepackage{pdfpages}
 \usepackage{anysize}
+\usepackage{enumitem}
 \usepackage[unicode]{hyperref}
 \hypersetup{
 	pdftitle={Joseph Batchik's Resume},
@@ -25,116 +26,97 @@
 \begin{document}
 \name{\Large{Joseph D. Batchik} \hskip 0pt plus 2fil minus 0pt {\small{\href{mailto:josephbatchik@gmail.com}{josephbatchik@gmail.com} - (410) 599-3550}}}
 \begin{resume}
-\section{\mysidestyle Objective}
-    To secure full-time employment in a challenging, fast-paced development role.
-\section{\mysidestyle Work Experience}
-	\begin{asparadesc}
-        \employer{Cloudera}{San Francisco, CA}{Summer 2015}{Software Engineer Intern}
-        {http://cloudera.com/}
-        \small
-        Worked on a several different parts of Apache Spark, including implementing performance
-        increases which reduce network traffic by over 90\% and integrating Apache
-        Avro as a first class citizen into Spark core. Went through the process of packaging
-        changes into major Hadoop release. Languages / tools used: 
-        Scala, Java.
-        \normalsize
-        \\
-        \employer{Google}{New York, NY}{Summer 2014}{SRE Engineering Practicum Intern}
-        {http://google.com/}
-		\small
-        Implemented load testing infrastructure for newly released software,
-        allowing for early detection of bugs and performance defects before
-        releasing to the end user. Reduced request latency by 70\% for 
-        back-end monitoring services. Languages / tools used: Java, Python, 
-        Protocol Buffers, Google data stores.
-		\normalsize
-		\\
-		\employer{Amazon}{Seattle, WA}{Spring 2014}{Software Developer Engineer Intern}
-        {http://amazon.com/}
-		\small
-	    Overhauled internal search capabilities for the Enterprise Data Warehouse
-        team, allowing for near-real time search capabilities for Amazon's data
-        analytics. Designed the System to be fault tolerant to preserve data integrity.
-        Languages / tools used: Java, various Amazon cloud products, including Cloud-Search
-        and SNS.
-        \normalsize
-		\\
-		\employer{John Hopkins University Applied Physics Lab}{Laurel, MD}
-        {Summer 2013}{Engineering Intern}{http://jhuapl.edu/}
-		\small
-		Working with a team, developed a sensor management system used to control and collect data from
-        multiple telescopes remotely. Languages / tools used: Java, ant, svn, SQL,
-        Google Protocol Buffers.
-        \normalsize
-        \\
-        \\
-        Additional prior summer internships:\\
-        \textbf{Six3 Systems, Inc.} - Fulton, MD \hfill Summer 2012 - http://six3esd.com \\
-        \textbf{SRA International} - Columbia, MD \hfill Summer 2012 - http://sra.com \\
-        \textbf{RTGX - Ross Technology, Inc.} - Baltimore, MD \hfill Summer 2011 - http://rtgx.com \\
-        \textbf{Computer Science Corporation} - Hanover, MD \hfill Summer 2011 - http://csc.com
-    \end{asparadesc}
-
-\section{\mysidestyle Education}
-	\begin{compactdesc}
-		\item[Rochester Institute of Technology] - Rochester, NY \rdate{September 2012 - Present} \\
-            Major: Computer Science, Minor: American Politics \rdate{In-Major: 3.82 GPA, Overall: 3.60 GPA} \\
-            Graduation: May 2016 \rdate{Dean's List}
-	\end{compactdesc}
-
-\section{\mysidestyle Technical Skills \& Certifications}
-	\begin{compactdesc}
-		\item[Languages] \begin{inparaenum} { \small
-            \item Scala
-			\item Python
-			\item Java
-			\item Ruby
-			\item Go
-            \item Haskell
-		} \end{inparaenum}
-		\item[Tools] \begin{inparaenum} { \small
-			\item Git
-            \item Spark
-            \item Avro
-            \item Rails
-            \item PostgreSQL
-            \item JUnit
-            \item Protocol Buffers
-		} \end{inparaenum}
-        \item[Certifications] \begin{inparaenum} { \small
-            \item Cloudera Certified Developer for Apache Hadoop, 2012    
-        } \end{inparaenum}
-        \item[Apache Spark Contributor] Developed a solution to allow for Spark to efficiently read
-            / write Apache Avro data formats. Worked on features in the Spark SQL engine.
-	\end{compactdesc}
-
+  \section{\mysidestyle Work Experience}
+  \begin{asparadesc}
+    \small \employer{Apple Inc. (iCloud)}{San Francisco, CA}{2016 - Present}{Software
+      Engineer}{http://apple.com/}
+    \vspace{-5mm}
+    \begin{itemize}
+      \item Designed key aspects of the backing blob store engine that enables iCloud to scale to
+        hundreds of millions of users each month.
+      \item Architected the new multi-tenant compaction system which provides better throughput
+        guarantees and reliability.
+      \item All of this work provides better resource forcasting for finance teams. 
+      \item Engineered a proactive solution to data loss prevention. Lead to the discovery of
+        several undiscovered, subtle bugs in the underlying frameworks and data store.
+      \item Vastly reduced database load by introducing a framework that allows numerous subsystems
+        to share the same pooled resources concurrently.
+      \item Languages / tools used: Scala, Java, Cassandra, MapReduce
+    \end{itemize}
+    \employer{Cloudera}{San Francisco, CA}{Summer 2015}{Software Engineer
+      Intern}{http://cloudera.com/}
+    \vspace{-5mm}
+    \begin{itemize}
+    \item Implemented network performance increase in Apache Spark that reduced traffic by over
+      90\%
+    \item Integrated Apache Avro as a first-class citizen into Spark core for use in RDDs
+    \item Languages / tools used: Scala, Java, Apache Spark
+    \end{itemize}
+    \employer{Google}{New York, NY}{Summer 2014}{SRE Engineering Practicum
+      Intern}{http://google.com/}
+    \vspace{-5mm}
+    \begin{itemize}
+    \item Implemented load testing infrastructure for newly release software, allowing for early
+      detection of bugs and performance defects
+    \item Reduced request latency for 70\% for back-end monitoring services
+    \item Languages / tools used: Java, Python Protocol Buffers, Google data stores.
+    \end{itemize}
+    \employer{Amazon}{Seattle, WA}{Spring 2014}{Software Developer Engineer
+      Intern}{http://amazon.com/}
+    \vspace{-5mm}
+    \begin{itemize}
+    \item Overhauled internal search capabilities for the Enterprise Data Warehouse team, allowing
+      for near-real time search capabilities for Amazon's data analytics.
+    \item Designed the new search system to be fault tolerant to preserve data integrity.
+    \item Languages / tools used: Java, various Amazon cloud products, including Cloud-Search and
+      SNS.
+    \end{itemize}
+    \employer{John Hopkins University Applied Physics Lab}{Laurel, MD}{Summer 2013}{Engineering
+      Intern}{http://jhuapl.edu/}
+    \vspace{-5mm}
+    \begin{itemize}
+    \item Working with a team, developed a sensor management system used to control and collect
+      data from multiple telescopes remotely.
+    \item Languages / tools used: Java, Ant, SVN, SQL, Google Protocol Buffers.
+    \end{itemize}
+  \end{asparadesc}
+  \section{\mysidestyle Education}
+  \begin{compactdesc}
+  \item[Rochester Institute of Technology] - Rochester, NY \rdate{2012 - 2016} \\
+    \textbf{Major}: Computer Science \rdate{In-Major: 3.82 GPA, Overall: 3.60 GPA} \\
+    \vspace{-4mm}
+    \begin{flushright} Graduated \textit{Cum Laude} \end{flushright}
+  \end{compactdesc}
+\section{\mysidestyle Skills \& Certifications}
+  \begin{compactdesc}
+  \item[Languages] \small Scala, Java, Python, Go, Rust
+  \item[Tools] \small Git, Spark, Avro, Gradle, PostgreSQL, Cassandra, Protocol Buffers, Thrift,
+    OpenJDK JMH
+  \item[Certifications] \small Cloudera Certified Developer for Apache Hadoop, 2012    
+  \item[Apache Spark Contributor] Developed a solution to allow for Spark to efficiently read /
+    write Apache Avro data formats. Worked on features in the Spark SQL engine.
+  \end{compactdesc}
 \section{\mysidestyle Self-Directed Projects}
-    \begin{asparablank}
-        \item \textbf{Wikipedia Page Views}: Using HDFS and HBase, built a system that
-            processed and stored the page view log data for all of Wikipedia 
-            and presented the information in a real-time web UI. Personally setup and 
-            maintained an 8 node Hadoop cluster for the project. \\
-        \item \textbf{Github Language Analysis}: Built a data analyzer and
-            ingest pipeline using Go to determine the programming language 
-            usage across all of GitHub. This provided key insights to language usage
-            trends over time and in comparison to each other. Implemented a 
-            distributed ingest pipeline to increase processing capabilities. \\
-        \item \textbf{LDAP Profiles}: Created and maintain a Rails web 
-            application to act as a friendly interfreleasing to the end userIt 
-            integrates with WebAuth to securely provide keyless login. 
-            Actively used in production at Rochester Institute of Technology.
-    \end{asparablank}
-\section{\mysidestyle Awards}
-    \begin{asparablank}
-        \item \textbf{Maryland Math Engineering Science Achievement}: Won 1st place
-            in both regional and state level competitions for developing a maze
-            traversal algorithm in Python. 
-    \end{asparablank}
-\section{\mysidestyle Clubs \& Activities}
-    \begin{asparablank}
-        \item \textbf{CSH (Computer Science House)}: An organization at RIT that
-            provides a living and learning environment with access to unique facilities
-            and hands-on learning, all in a social environment.
-    \end{asparablank}
+  \textbf{Raft Key-Value Store}
+  \begin{itemize}[noitemsep,nolistsep]
+    \item Distributed key-value store that provides linearizability guarentees for all operations.
+    \item Out of the box support for leader election, transparent handling of failing nodes, and
+      correctness under network partition.
+  \end{itemize}
+  \textbf{CRDT Distributed Tally Service}
+  \begin{itemize}[noitemsep,nolistsep]
+    \item Distributed backend counting service that is capable of withstanding large amounts of
+      concurrent requests.
+    \item Uses G-Counters as the backing asynchronous replication model.
+    \item Implemented with a combination of lightweight threads for the request handling, Zookeeper
+      as the election system, and Thrift as the shared communication protocol.
+   \end{itemize}
+   \textbf{Github Language Analysis}
+   \begin{itemize}[noitemsep,nolistsep]
+     \item Data analyzer and ingest pipeline using Go to determine the programming language usage
+       across all of GitHub.
+     \item Provides key insights to language usage trends over time and in comparison to each other.
+     \item Implemented a distributed ingest pipeline to increase processing capabilities.
+   \end{itemize}
 \end{resume}
 \end{document}
