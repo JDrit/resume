@@ -27,36 +27,37 @@
 \begin{resume}
   \section{\mysidestyle Work Experience}
   \begin{asparadesc}
-    \small \employer{Apple Inc. (iCloud)}{San Francisco, CA}{2016 - Present}{Software
+    \small
+    \employer{Apple Inc. (iCloud)}{San Francisco, CA}{2016 - Present}{Software
       Engineer}{http://apple.com/}
     \vspace{-5mm}
     \begin{itemize}
       \item Designed key aspects of the backing storage engine that enables iCloud to scale to
         hundreds of millions of users each month.
-      \item Architected the new multi-tenant storage compaction system which provides better
-        throughput guarantees and reliability.
+      \item Architected the new multi-tenant online compaction system which provides higher
+        throughput guarantees and reliability by distributing workloads over backend resources
+        evenly.
       \item Engineered a proactive solution to data loss prevention. Lead to the discovery of
         several undiscovered, subtle bugs in the underlying frameworks and data store.
-      \item Vastly reduced database load by introducing a framework that allows numerous subsystems
-        to share the same pooled resources concurrently.
-      \item Languages / tools used: Scala, Java, Cassandra, MapReduce.
+      \item Vastly reduced database load by introducing a job framework that allows numerous
+        scheduled jobs share the same pooled resources concurrently.
+      \item Languages / tools used: Scala, Java, Cassandra, MapReduce Frameworks.
     \end{itemize}
     \employer{Cloudera}{San Francisco, CA}{Summer 2015}{Software Engineer
       Intern}{http://cloudera.com/}
     \vspace{-5mm}
     \begin{itemize}
-    \item Implemented network performance increases in Apache Spark
-      that reduced traffic by over 90\%.
-    \item Integrated Apache Avro as a first-class citizen into Spark core for
-      use in RDDs.
+    \item Implemented network performance increases in Apache Spark that reduced traffic by over
+      90\%.
+    \item Integrated Apache Avro as a first-class citizen into Spark core for use in RDDs.
     \item Languages / tools used: Scala, Java, Apache Spark.
     \end{itemize}
     \employer{Google}{New York, NY}{Summer 2014}{SRE Engineering Practicum
       Intern}{http://google.com/}
     \vspace{-5mm}
     \begin{itemize}
-    \item Implemented load testing infrastructure for newly release software,
-      allowing for early detection of bugs and performance defects.
+    \item Implemented load testing infrastructure for newly release software, allowing for early
+      detection of bugs and performance defects.
     \item Reduced request latency for back-end monitoring services by 70\%.
     \item Languages / tools used: Java, Python Protocol Buffers, Google data stores.
     \end{itemize}
@@ -64,13 +65,10 @@
       Intern}{http://amazon.com/}
     \vspace{-5mm}
     \begin{itemize}
-    \item Overhauled internal search capabilities for the Enterprise Data
-      Warehouse team, allowing for near-real time searching for financial
-      datasets and results.
-    \item Designed the new search system to be fault tolerant to preserve data
-      integrity.
-    \item Languages / tools used: Java, various AWS products, including
-      Cloud-Search and SNS.
+    \item Overhauled internal search capabilities for the Enterprise Data Warehouse team, allowing
+      for near-real time searching for financial datasets and results.
+    \item Designed the new search system to be fault tolerant to preserve data integrity.
+    \item Languages / tools used: Java, various AWS products, including Cloud-Search and SNS.
     \end{itemize}
     \employer{John Hopkins University Applied Physics Lab}{Laurel, MD}{Summer 2013}{Engineering
       Intern}{http://jhuapl.edu/}
@@ -88,7 +86,7 @@
     \vspace{-4mm}
     \begin{flushright} Graduated \textit{Cum Laude} \end{flushright}
     \vspace{1mm}
-    \small Courses include: Programming Language Theory, Compiler Constructions, Data Mining
+    \small Courses include: Programming Language Theory, Compiler Construction, Data Mining
   \end{compactdesc}
   \vspace{-2mm}
 \section{\mysidestyle Skills \& Certifications}
@@ -96,14 +94,13 @@
   \item[Languages] \small Scala, Java, Python, Go, Rust
   \item[Tools] \small Git, Spark, Avro, Gradle, PostgreSQL, Cassandra, Protocol Buffers, Thrift,
     OpenJDK JMH
-  \item[Certifications] \small Cloudera Certified Developer for Apache Hadoop, 2012    
   \item[Apache Spark Contributor] Developed a solution to allow for Spark to efficiently read /
     write Apache Avro data formats. Worked on features in the Spark SQL engine.
   \end{compactdesc}
   \vspace{-2mm}
-\section{\mysidestyle Self-Directed Projects Include}
+  \section{\mysidestyle Self-Directed Projects Include}
   \textbf{Raft Key-Value Store}
-  \begin{itemize}[noitemsep,nolistsep]
+  \begin{itemize}
     \item Distributed key-value store that provides linearizability guarentees for all type of
       operations.
     \item Out of the box support for leader election, transparent handling of failing nodes, and
@@ -111,20 +108,19 @@
   \end{itemize}
   \vspace{-2mm}
   \textbf{CRDT Distributed Tally Service}
-  \begin{itemize}[noitemsep,nolistsep]
+  \begin{itemize}
     \item Distributed backend counting service that is capable of withstanding large amounts of
       concurrent requests.
     \item Uses G-Counters as the backing asynchronous replication model.
-    \item Utilizes with a combination of lightweight threads for the request handling, Zookeeper
-      as the election system, and Thrift as the shared communication protocol.
+    \item Utilizes a combination of lightweight threads for the request handling, Zookeeper for
+      cluster state, and Thrift as the shared communication protocol.
   \end{itemize}
   \vspace{-2mm}
-  \textbf{Github Language Analysis}
-  \begin{itemize}[noitemsep,nolistsep]
-    \item Data analyzer and ingest pipeline using Go to determine the programming language usage
-      across all of GitHub.
+  \textbf{Github Language Analyzer}
+  \begin{itemize}
+    \item Data analyzer and ingest pipeline using Go to analyze correlations in programming language
+      usage across all of GitHub.
     \item Provides key insights to language usage trends over time and in comparison to each other.
-    \item Implemented a multi-node ingest pipeline to increase processing capabilities.
   \end{itemize}
 \end{resume}
 \end{document}
