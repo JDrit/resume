@@ -1,36 +1,37 @@
-\documentclass[a4paper,margin,line]{resume}
+\documentclass[overlapped,line]{resume}
 \usepackage[defblank]{paralist}
 \usepackage{pdfpages}
 \usepackage{anysize}
 \usepackage{enumitem}
 \usepackage[unicode]{hyperref}
+
+% sets up the margin for A4 paper
+\usepackage[a4paper,top=0.5in,left=0.75in,total={6.2in,10.5in}]{geometry}
+
 \hypersetup{
   pdftitle={Joseph Batchik's Resume},
   pdfauthor={Joseph Batchik},
   pdfborder={0 0 0},
   unicode=true
 }
-\newcommand\textbox[1]{%
-  \parbox{.333\textwidth}{#1}%
-}
-\marginsize{0.375in}{1.875in}{0.375in}{0.375in}
+
 \setdefaultitem{\footnotesize \textbullet}{}{}{}{}{}
 \setdefaultleftmargin{0em}{}{}{}{}{}
 \setdefaultenum{(a)}{(1)}{}{}{}{}
 \newcommand{\rurl}[1]{\hfill {\footnotesize \url{#1}}}
 \newcommand{\rdate}[1]{\hfill {\small #1}}
-\renewcommand{\employer}[5]{ \item[#1] - #2 \rdate{#3} \\* #4 \rurl{#5} \\*}
+\renewcommand{\employer}[5]{ \item[#1] - #2 \rdate{#3} \\* #4 \rurl{#5} \\* \vspace{-5mm}}
+
 \begin{document}
-\name{\Large{Joseph D. Batchik} \hskip 0pt plus 2fil minus 0pt
-  {\small{\href{mailto:josephbatchik@gmail.com}{josephbatchik@gmail.com}
-      - (410) 599-3550}}}
+\name{\Large{Joseph D. Batchik} \hspace{145pt}
+  {\small{\href{mailto:josephbatchik@gmail.com}{josephbatchik@gmail.com} - (410) 599-3550}}}
 \begin{resume}
-  \section{\mysidestyle Work Experience}
+
+\section{\mysidestyle Work Experience}
+
   \begin{asparadesc}
-    \small
     \employer{Apple Inc. (iCloud)}{San Francisco, CA}{2016 - Present}{Software
       Engineer}{http://apple.com/}
-    \vspace{-5mm}
     \begin{itemize}
       \item Designed key aspects of the backing storage engine that enables iCloud to scale to
         hundreds of millions of users each month.
@@ -45,62 +46,55 @@
     \end{itemize}
     \employer{Cloudera}{San Francisco, CA}{Summer 2015}{Software Engineer
       Intern}{http://cloudera.com/}
-    \vspace{-5mm}
     \begin{itemize}
-    \item Implemented network performance increases in Apache Spark that reduced traffic by over
-      90\%.
-    \item Integrated Apache Avro as a first-class citizen into Spark core for use in RDDs.
-    \item Languages / tools used: Scala, Java, Apache Spark.
+      \item Implemented network performance increases in Apache Spark that reduced traffic by over
+        90\%.
+      \item Integrated Apache Avro as a first-class citizen into Spark core for use in RDDs.
+      \item Languages / tools used: Scala, Java, Apache Spark.
     \end{itemize}
     \employer{Google}{New York, NY}{Summer 2014}{SRE Engineering Practicum
       Intern}{http://google.com/}
-    \vspace{-5mm}
     \begin{itemize}
-    \item Implemented load testing infrastructure for newly released software, allowing for early
-      detection of bugs and performance defects.
-    \item Reduced request latency for back-end monitoring services by 70\%.
-    \item Languages / tools used: Java, Python Protocol Buffers, Google data stores.
+      \item Implemented load testing infrastructure for newly released software, allowing for early
+        detection of bugs and performance defects.
+      \item Reduced request latency for back-end monitoring services by 70\%.
+      \item Languages / tools used: Java, Python Protocol Buffers, Google data stores.
     \end{itemize}
     \employer{Amazon}{Seattle, WA}{Spring 2014}{Software Developer Engineer
       Intern}{http://amazon.com/}
-    \vspace{-5mm}
     \begin{itemize}
-    \item Overhauled internal search capabilities for the Enterprise Data Warehouse team, allowing
-      for near real-time searching for financial datasets and results.
-    \item Designed the new search system to be fault tolerant to preserve data integrity.
-    \item Languages / tools used: Java, various AWS products, including Cloud-Search and SNS.
-    \end{itemize}
-    \employer{John Hopkins University Applied Physics Lab}{Laurel, MD}{Summer 2013}{Engineering
-      Intern}{http://jhuapl.edu/}
-    \vspace{-5mm}
-    \begin{itemize}
-    \item Working with a team, developed a sensor management system used to control and collect data
-      from multiple telescopes remotely.
-    \item Languages / tools used: Java, Ant, SVN, SQL, Google Protocol Buffers.
+      \item Overhauled internal search capabilities for the Enterprise Data Warehouse team, allowing
+        for near real-time searching for financial datasets and results.
+      \item Designed the new search system to be fault tolerant to preserve data integrity.
+      \item Languages / tools used: Java, various AWS products, including Cloud-Search and SNS.
     \end{itemize}
   \end{asparadesc}
-  \section{\mysidestyle Education}
+
+\section{\mysidestyle Education}
+
   \begin{compactdesc}
-  \item[Rochester Institute of Technology] - Rochester, NY \hfill {2012 - 2016} \\
-    \textbf{Major}: Computer Science \hfill {In-Major: 3.82 GPA, Overall: 3.60} \\
-    \vspace{-4mm}
-    \begin{flushright} Graduated \textit{Cum Laude} \end{flushright}
-    \vspace{1mm}
-    \begin{itemize}
-    \item \small Courses include: Programming Language Theory, Compiler Construction, Data Mining
-    \end{itemize}
+    \item[Rochester Institute of Technology] - Rochester, NY \hfill {2012 - 2016} \\
+      \textbf{Major}: Computer Science \hfill {In-Major: 3.82 GPA, Overall: 3.60} \\
+      \vspace{-4mm}
+      \begin{flushright} Graduated \textit{Cum Laude} \end{flushright}
   \end{compactdesc}
-  \vspace{-2mm}
+  \vspace{-6mm}
+  
 \section{\mysidestyle Skills \& Certifications}
+
   \begin{compactdesc}
-  \item[Languages] \small Scala, Java, Python, Go, Rust
+  \item[Proficient at] \small Scala, Java, Python
+  \item[Familiar with] \small C, Go, Rust
   \item[Tools] \small Git, Spark, Avro, Gradle, PostgreSQL, Cassandra, Protocol Buffers, Thrift,
     OpenJDK JMH
   \item[Apache Spark Contributor] Developed a solution to allow for Spark to efficiently read /
     write Apache Avro data formats. Worked on features in the Spark SQL engine.
   \end{compactdesc}
-  \vspace{-2mm}
-  \section{\mysidestyle Self-Directed Projects Include}
+
+
+\section{\mysidestyle Self-Directed Projects Include}
+
+
   \textbf{Raft Key-Value Store} \rurl{https://github.com/JDrit/RaftService}
   \begin{itemize}
     \item Distributed key-value store that provides linearizability guarentees for all type of
@@ -108,7 +102,7 @@
     \item Out of the box support for leader election, transparent handling of failing nodes, and
       correctness under network partition.
   \end{itemize}
-  \vspace{-2mm}
+
   \textbf{CRDT Distributed Tally Service} \rurl{https://github.com/JDrit/gossip-crdt}
   \begin{itemize}
     \item Distributed backend counting service that is capable of withstanding large amounts of
@@ -117,7 +111,7 @@
     \item Utilizes a combination of lightweight threads for the request handling, Zookeeper for
       cluster state, and Thrift as the shared communication protocol.
   \end{itemize}
-  \vspace{-2mm}
+
   \textbf{Github Language Analyzer} \rurl{https://github.com/JDrit/github_stats}
   \begin{itemize}
     \item Data analyzer and ingest pipeline using Go to analyze correlations in programming language
